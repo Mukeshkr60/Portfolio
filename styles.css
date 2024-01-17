@@ -12,13 +12,30 @@ section {
   padding: 100px 200px;
 }
 
+
+#author{
+  font-family: Helvetica, Arial;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #888;
+}
+
+#author:hover{
+  color: #111;
+}
+
 .main {
   position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(new-pic-res.jpg) no-repeat;
+  background: url(./Images/new-pic-res.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -29,7 +46,7 @@ section {
 }
 
 .main .content h2 {
-  color: #3b5651;
+  color: #33a1eb;
   font-size: 2em;
   font-weight: 500;
 }
@@ -124,7 +141,7 @@ header.sticky {
 }
 
 header .brand {
-  color: #84a3e5;
+  color: #0852f3;
   font-size: 1.8em;
   font-weight: 700;
   text-transform: uppercase;
@@ -136,7 +153,7 @@ header .navigation {
 }
 
 header .navigation a {
-  color: #84a3e5;
+  color: #0852f3;
   font-size: 1.2em;
   font-weight: 500;
   text-decoration: none;
@@ -154,6 +171,7 @@ header.sticky .navigation a:hover {
 body {
   min-height: 110vh;
 }
+/* About Me */
 
 .title {
   width: 100%;
@@ -237,6 +255,8 @@ body {
 .about .content .col-right .paragraph-text {
   font-size: 1em;
 }
+
+/* Skills */
 
 .skills {
   background: #000016;
@@ -329,6 +349,7 @@ body {
   background: #f01988;
 }
 
+/* Services */
 .services .content {
   display: flex;
   justify-content: center;
@@ -377,14 +398,38 @@ body {
   margin: 10px;
 }
 
-/* .services .content .card .info h3 p {
-  text-align: center;
-  font-size: 0.9em;
-  font-weight: 400;
-  margin: 5px;
-} */
+
+
+/* Work */
 .work {
   background: #000016;
+}
+
+.workBtn{
+
+  color: #fff;
+  background: #5f0353;
+  font-size: 1em;
+  font-weight: 400;
+  /* display: inline-block; */
+  /* padding: 10px 20px; */
+  text-transform: uppercase; 
+  text-decoration: none; 
+  letter-spacing: 1px;
+  border-radius: 1px;
+  margin-top: 3px;
+  transition: 0.5s ease;
+
+  padding: 3px;
+  margin-left: 35%;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.workBtn:hover{
+  background-color: #5f0353;
+  /* background: zoom-in; */
+  transform: scale(1.2);
 }
 
 .work .content {
@@ -422,6 +467,92 @@ body {
 .work .content .card .card-img img:hover {
   transform: scale(1.2);
 }
+
+/* My Gallery */
+
+.gallery {
+  background: #ced0d8;
+}
+
+.newBtn{
+
+  color: #fff;
+  background: #5f0353;
+  font-size: 1em;
+  font-weight: 400;
+  /* display: inline-block; */
+  /* padding: 10px 20px; */
+  text-transform: uppercase; 
+  text-decoration: none; 
+  letter-spacing: 1px;
+  border-radius: 1px;
+  margin-top: 5px;
+  transition: 0.5s ease;
+
+  padding: 3px;
+  margin-left: 35%;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.newBtn:hover{
+  background-color: #5f0353;
+  /* background: zoom-in; */
+  transform: scale(1.2);
+}
+
+/* .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+/* .btn:hover {
+  background-color: RoyalBlue;
+} */ 
+
+
+.gallery .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery .content .card {
+  width: 340px;
+  margin: 15px;
+}
+
+.gallery .content .card .card-img {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery .content .card .card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.gallery .content .card .card-img img:hover {
+  transform: scale(1.2);
+}
+
+/* Contacts */
 
 .contact .content {
   display: flex;
