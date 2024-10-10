@@ -12,8 +12,7 @@ section {
   padding: 100px 200px;
 }
 
-
-#author{
+#author {
   font-family: Helvetica, Arial;
   text-transform: uppercase;
   font-size: 14px;
@@ -25,7 +24,7 @@ section {
   color: #888;
 }
 
-#author:hover{
+#author:hover {
   color: #111;
 }
 
@@ -398,23 +397,20 @@ body {
   margin: 10px;
 }
 
-
-
 /* Work */
 .work {
   background: #000016;
 }
 
-.workBtn{
-
+.workBtn {
   color: #fff;
   background: #5f0353;
   font-size: 1em;
   font-weight: 400;
   /* display: inline-block; */
   /* padding: 10px 20px; */
-  text-transform: uppercase; 
-  text-decoration: none; 
+  text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 1px;
   border-radius: 1px;
   margin-top: 3px;
@@ -424,9 +420,8 @@ body {
   margin-left: 35%;
   justify-content: center;
   cursor: pointer;
-
 }
-.workBtn:hover{
+.workBtn:hover {
   background-color: #5f0353;
   /* background: zoom-in; */
   transform: scale(1.2);
@@ -474,16 +469,15 @@ body {
   background: #ced0d8;
 }
 
-.newBtn{
-
+.newBtn {
   color: #fff;
   background: #5f0353;
   font-size: 1em;
   font-weight: 400;
   /* display: inline-block; */
   /* padding: 10px 20px; */
-  text-transform: uppercase; 
-  text-decoration: none; 
+  text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 1px;
   border-radius: 1px;
   margin-top: 5px;
@@ -493,9 +487,8 @@ body {
   margin-left: 35%;
   justify-content: center;
   cursor: pointer;
-
 }
-.newBtn:hover{
+.newBtn:hover {
   background-color: #5f0353;
   /* background: zoom-in; */
   transform: scale(1.2);
@@ -513,8 +506,7 @@ body {
 /* Darker background on mouse-over */
 /* .btn:hover {
   background-color: RoyalBlue;
-} */ 
-
+} */
 
 .gallery .content {
   display: flex;
