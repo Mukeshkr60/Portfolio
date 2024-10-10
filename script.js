@@ -50,3 +50,93 @@ function reveal() {
     }
   }
 }
+
+// *************************************************
+
+// Smooth scrolling for navigation links
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const targetId = this.getAttribute("href");
+//     const targetElement = document.querySelector(targetId);
+//     targetElement.scrollIntoView({
+//       behavior: "smooth",
+//       block: "start",
+//     });
+//   });
+// });
+
+// Show the scroll to top button when scrolling down
+const scrollToTopBtn = document.querySelector(".scrollToTop-btn");
+
+window.addEventListener("scroll", () => {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+});
+
+// Scroll to top when the button is clicked
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+// Lightbox for image gallery
+const galleryImages = document.querySelectorAll(".gallery .card-img img");
+const lightbox = document.createElement("div");
+lightbox.classList.add("lightbox");
+document.body.appendChild(lightbox);
+
+galleryImages.forEach((image) => {
+  image.addEventListener("click", () => {
+    lightbox.style.display = "block";
+    const img = document.createElement("img");
+    img.src = image.src;
+    lightbox.innerHTML = "";
+    lightbox.appendChild(img);
+  });
+});
+
+// Close the lightbox when clicked
+lightbox.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+// Animate skill bars when they come into view
+const skillBars = document.querySelectorAll(".bar");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const line = entry.target.querySelector(".line");
+        const percentage = line.previousElementSibling.innerText;
+        line.style.width = percentage;
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+skillBars.forEach((bar) => observer.observe(bar));
+
+// Simple form validation
+const contactForm = document.querySelector("form");
+
+contactForm.addEventListener("submit", (e) => {
+  const name = contactForm.querySelector('input[name="name"]').value;
+  const email = contactForm.querySelector('input[name="email"]').value;
+
+  if (!name || !email) {
+    e.preventDefault();
+    alert("Please fill out all required fields.");
+  }
+});

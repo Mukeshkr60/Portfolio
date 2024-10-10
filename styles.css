@@ -38,9 +38,8 @@ section {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  
 }
-.content{
+.content {
   left: 9%;
 }
 
@@ -227,10 +226,9 @@ body {
 
 /* About Me */
 
-.about{
+.about {
   background-color: rgb(194, 197, 211);
 }
-
 
 .title {
   width: 100%;
@@ -246,7 +244,6 @@ body {
   font-size: 2.5em;
   font-weight: 800;
   margin-bottom: 15px;
-  
 }
 
 .section-title:before {
@@ -292,7 +289,7 @@ body {
 
 .about .content .col-right {
   position: relative;
-   width: 55%;
+  width: 55%;
 }
 
 .about .content .col-left .img-card {
@@ -330,9 +327,9 @@ body {
 /* .skills .title reveal{
  margin-top: 50px;
 } */
-.skills .section-title{
-margin-top: 5px;
-margin-left: 10px;
+.skills .section-title {
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 .skills .content {
@@ -352,7 +349,6 @@ margin-left: 10px;
 
 .skills .content .col-left .content-title {
   margin-bottom: 20px;
- 
 }
 
 .skills .content .col-right {
@@ -424,15 +420,11 @@ margin-left: 10px;
   background: #f01988;
 }
 
-
-
 /* Experience */
 
-.experience{
+.experience {
   background-color: rgb(194, 197, 211);
 }
-   
-
 
 /* Services */
 .services .content {
@@ -893,4 +885,23 @@ margin-left: 10px;
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+/* ************************************************************************* */
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
 }
