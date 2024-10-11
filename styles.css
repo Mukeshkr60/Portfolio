@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  
 }
 
 section {
@@ -61,7 +62,7 @@ section {
 
 .animated-text {
   position: relative;
-  height: 70px;
+  height: 80px;
   overflow: hidden;
 }
 
@@ -97,7 +98,7 @@ section {
 
 .btn {
   color: #fff;
-  background: #264158;
+  background: #145187;
   font-size: 1em;
   font-weight: 600;
   display: inline-block;
@@ -119,8 +120,8 @@ section {
 }
 
 .media-icons a {
-  color: #3ea12f;
-  font-size: 25px;
+  color: #24aee4;
+  font-size: 30px;
   margin-right: 20px;
 }
 
@@ -154,7 +155,7 @@ header.sticky {
 header .brand {
   font-size: 2.2em;
   font-weight: bold;
-  color: #d9e2b1; /* Bold orange for brand */
+  color: #b7e0e4; /* Bold orange for brand */
   text-transform: uppercase;
   letter-spacing: 2px;
   text-decoration: none; /* Remove underline from brand */
@@ -162,7 +163,7 @@ header .brand {
 }
 
 header .brand:hover {
-  color: white; /* Hover effect for brand (red tone) */
+  color: #24c85d; /* Hover effect for brand (red tone) */
 }
 
 /* Navigation Menu */
@@ -185,7 +186,7 @@ header .navigation a {
 
 header .navigation a:hover {
   color: #fff;
-  background-color: #85a2f4; /* Red background on hover */
+  background-color: #5e1053; /* Red background on hover */
 }
 
 /* Menu Button for Mobile */
@@ -199,7 +200,7 @@ header.sticky .navigation a {
 }
 
 header.sticky .navigation a:hover {
-  background-color: #101a39; /* Orange background on hover in sticky mode */
+  background-color: #1d49ce; /* Orange background on hover in sticky mode */
 }
 
 /* Responsive Design */
@@ -231,19 +232,24 @@ body {
 }
 
 .title {
+ 
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: -30px;
+  
 }
 
 .section-title {
+  
   position: relative;
   color: #5f0353;
   font-size: 2.5em;
   font-weight: 800;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+ 
 }
 
 .section-title:before {
@@ -271,6 +277,7 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  
 }
 
 .about .content {
@@ -278,8 +285,9 @@ body {
   width: 110%;
   display: flex;
   justify-content: space-between;
-  margin-top: 12px;
+  margin-top: 20px;
   left: -5%;
+  margin-bottom: -30px;
 }
 
 .about .content .col-left {
@@ -311,7 +319,7 @@ body {
 .about .content .col-right .content-title {
   font-size: 2em;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .about .content .col-right .paragraph-text {
@@ -322,7 +330,7 @@ body {
 /* Skills */
 
 .skills {
-  background: #190832;
+  background: #0c052a;
 }
 /* .skills .title reveal{
  margin-top: 50px;
@@ -339,6 +347,7 @@ body {
   justify-content: space-between;
   color: rgb(255, 255, 255);
   margin-left: 10px;
+  margin-bottom: -60px;
 }
 
 .skills .content .col-left {
@@ -348,12 +357,13 @@ body {
 }
 
 .skills .content .col-left .content-title {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .skills .content .col-right {
   position: relative;
-  width: 50%;
+  width: 60%;
+  margin-right: 10%;
 }
 
 .skills .content .col-right .bar {
@@ -378,7 +388,11 @@ body {
   width: 100%;
   height: 15px;
   background: #ccc;
-  border-radius: 2px;
+  border-radius: 1.5px;
+  -webkit-border-radius: 1.5px;
+  -moz-border-radius: 1.5px;
+  -ms-border-radius: 1.5px;
+  -o-border-radius: 1.5px;
 }
 
 .skills .content .col-right .bar .line:before {
@@ -387,7 +401,11 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  border-radius: 2px;
+  border-radius: 1.5px;
+  -webkit-border-radius: 1.5px;
+  -moz-border-radius: 1.5px;
+  -ms-border-radius: 1.5px;
+  -o-border-radius: 1.5px;
 }
 
 .skills .content .col-right .bar .java:before {
@@ -441,7 +459,7 @@ body, h2, h4, h5, p {
 
 
 .column {
-  margin-bottom: 40px; /* Space between sections */
+  margin-bottom: 10px; /* Space between sections */
 }
 
 /* Title styles */
@@ -465,6 +483,7 @@ h4, h5 {
   line-height: 1.6; /* Improved readability */
   color: #444; /* Dark gray color for text */
   margin-bottom: 20px; /* Space below paragraphs */
+  margin-bottom: 10px;
 }
 
 /* Responsive adjustments */
@@ -501,8 +520,14 @@ h4, h5 {
 
 .title p {
   font-size: 1em;
-  width: 90%;
+  width: 100%;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.4;
+  margin: 0 auto;
+
 }
+
 
 .services .content .card {
   background: #f0f0f2;
@@ -603,6 +628,10 @@ h4, h5 {
   transform: scale(1.2);
 }
 
+
+
+/* * Gallery */
+
 .gallery {
   background: #ced0d8;
 }
@@ -611,19 +640,21 @@ h4, h5 {
   color: #fff;
   background: #5f0353;
   font-size: 1em;
-  font-weight: 400;
-
+  font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
   border-radius: 1px;
-  margin-top: 5px;
+  margin-top: 2px;
   transition: 0.5s ease;
-
-  padding: 3px;
+  padding: 2px;
   margin-left: 35%;
   justify-content: center;
   cursor: pointer;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
 }
 .newBtn:hover {
   background-color: #5f0353;
@@ -747,12 +778,14 @@ h4, h5 {
   justify-content: center;
   align-items: center;
   display: flex;
+ 
   
 }
 
 .contact-form {
   background: #fff;
-  max-width: 600px;
+  max-width: 1000px;
+  max-height: auto;
   margin-top: 50px;
   padding: 50px;
   border-radius: 10px;
