@@ -702,14 +702,6 @@ h5 {
   margin-top: 20px;
 }
 
-/* .contact .content .row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  
-} */
-
 .contact .content .row {
   display: flex;
   justify-content: space-between; /* Adds space between the cards */
@@ -999,19 +991,27 @@ h5 {
 
 /* ************************************************************************* */
 
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .contact .content .row {
+    flex-wrap: wrap; /* Allows cards to wrap in smaller screens */
+  }
+
+  .card {
+    width: 45%; /* Adjust card width for smaller screens */
+  }
+
+  .contact-form {
+    padding: 30px; /* Reduce padding on smaller screens */
+  }
 }
 
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* One card per row on mobile devices */
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
 }
